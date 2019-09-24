@@ -1,7 +1,7 @@
 class PartsController < ApplicationController
   def index
     @parts = Part.all
-    render json: @parts, status: :ok
+    render json: @parts, except: %i[created_at updated_at], status: :ok
   end
 
   def create
