@@ -1,6 +1,6 @@
-class PartController < ApplicationController
+class PartsController < ApplicationController
   def index
-    @parts: Part.all
+    @parts = Part.all
     render json: @parts, status: :ok
   end
 

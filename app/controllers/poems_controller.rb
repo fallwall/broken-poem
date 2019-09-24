@@ -1,6 +1,6 @@
-class PoemController < ApplicationController
+class PoemsController < ApplicationController
   def index
-    @poems: Poem.all
+    @poems = Poem.all
     render json: @poems, status: :ok
   end
 
