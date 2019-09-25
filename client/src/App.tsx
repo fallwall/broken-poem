@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Parts from './components/Parts';
 import './App.css';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <p>Never fear, TSX is here.</p>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Parts id={1} word="stuff"/>
+      </div>
+    );
+  }
 }
 
 export default App;
