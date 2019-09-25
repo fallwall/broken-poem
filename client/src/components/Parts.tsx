@@ -26,7 +26,7 @@ export class Parts extends Component<Part> {
       <div>
         <p>ID: {id}</p>
         <p>Word: {word}</p>
-        <input type="text" ref={this.part} />
+        <input type="text" ref={this.partRef} />
         <button
           onClick={this.onSearchClick}
           className="search-button">
